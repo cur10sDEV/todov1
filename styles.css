@@ -1,0 +1,85 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #320d0d;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    min-height: 100vh;
+}
+
+
+.top {
+    background-color: rgba(126, 22, 22, 0.25);
+    border-radius: 2rem;
+    margin: 1rem;
+    height: 37vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#cityName {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
+#currentW {
+    font-size: 5rem;
+}
+
+#wDesc, #lowHigh {
+    padding: .3rem;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem;
+    background-color: rgba(126, 22, 22, 0.25);
+    border-radius: 2rem;
+    margin: 1rem;
+}
+
+.flexrow {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexitems {
+    padding: 1rem;
+}
+
+.forecast {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.todayTimeW {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+img {
+    width: 50px;
+}
