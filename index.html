@@ -3,126 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>WeatherU</title>
+    <link rel="shortcut icon" href="https://creazilla-store.fra1.digitaloceanspaces.com/emojis/54330/pen-emoji-clipart-md.png" type="image/x-icon">
+    <title>tOdO</title>
 </head>
 <body>
-
-    <div class="container">
-
-        <!-- Top area -->
-        <div class="top">
-
-            <!-- Today's weather -->
-            <div class="today">
-
-                <h2 id="cityName">Gadarwara</h2>
-
-                <!-- Current Weather -->
-                <h1 id="currentW">36<span>°c</span></h1>
-
-                <hr noshade style="border: none; border-top: 3px white dotted; margin: 1rem 5rem;">
-
-                <!-- Weather Description -->
-                <h3 id="wDesc">Sunny</h3>
-
-                <!-- Low High Temperatures -->
-                <h3 id="lowHigh">32°c/38°c</h3>
-            
-            </div>
-        </div>
-
-        <!-- Bottom Area -->
-        <div class="bottom">
-
-            <div class="todayTimeW">
-                <div class="timeBox">
-                    <img src="https://cdn3.iconfinder.com/data/icons/bebreezee-weather-symbols/690/icon-weather-sunrainheavy-512.png" class="icon">
-                    <h4 class="todayForecastT">30°c</h4>
-                    <h4 class="time heading">12:00</h4>
-                </div>
-
-                <div class="timeBox">
-                    <img src="https://cdn3.iconfinder.com/data/icons/bebreezee-weather-symbols/690/icon-weather-sunrainheavy-512.png" class="icon">
-                    <h4 class="todayForecastT">30°c</h4>
-                    <h4 class="time heading">12:00</h4>
-                </div>
-
-                <div class="timeBox">
-                    <img src="https://cdn3.iconfinder.com/data/icons/bebreezee-weather-symbols/690/icon-weather-sunrainheavy-512.png" class="icon">
-                    <h4 class="todayForecastT">30°c</h4>
-                    <h4 class="time heading">12:00</h4>
-                </div>
-
-                <div class="timeBox">
-                    <img src="https://cdn3.iconfinder.com/data/icons/bebreezee-weather-symbols/690/icon-weather-sunrainheavy-512.png" class="icon">
-                    <h4 class="todayForecastT">30°c</h4>
-                    <h4 class="time heading">12:00</h4>
-                </div>
-            </div>
-
-            <!-- Different Details -->
-            <div class="details">
-
-                <div class="flexrow">
-                     <!-- Air Quality Index -->
-                    <div class="flexitems" id="aqi">
-                        <h3 class="heading">AQI</h3>
-                        <h3>43</h3>
-                    </div>
-
-                    <!-- Wind Speed -->
-                    <div class="flexitems" id="windSpeed">
-                        <h3 class="heading">Wind Speed</h3>
-                        <h3>22.0<span>km/h</span></h3>
-                    </div>
-                </div>
-               
-                <div class="flexrow">
-                    <!-- Pressure -->
-                    <div class="flexitems" id="pressure">
-                        <h3 class="heading">Pressure</h3>
-                        <h3>1001<span>mbar</span></h3>
-                    </div>
-
-                    <!-- Humidity -->
-                    <div class="flexitems" id="humidity">
-                        <h3 class="heading">Humidity</h3>
-                        <h3>60%</h3>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- 4 Day Future Forecast -->
-            <div class="forecast">
-                <div class="day">
-                    <img src="https://cdn3.iconfinder.com/data/icons/bebreezee-weather-symbols/690/icon-weather-sunrainheavy-512.png" class="icon">
-                    <h4 class="forecasdtT">30°c</h4>
-                    <h4 class="dayName heading">Tommorow</h4>
-                </div>
-
-                <div class="day">
-                    <img src="https://cdn3.iconfinder.com/data/icons/bebreezee-weather-symbols/690/icon-weather-sunrainheavy-512.png" class="icon">
-                    <h4 class="forecasdtT">30°c</h4>
-                    <h4 class="dayName heading">Saturday</h4>
-                </div>
-
-                <div class="day">
-                    <img src="https://cdn3.iconfinder.com/data/icons/bebreezee-weather-symbols/690/icon-weather-sunrainheavy-512.png" class="icon">
-                    <h4 class="forecasdtT">30°c</h4>
-                    <h4 class="dayName heading">Sunday</h4>
-                </div>
-
-                <div class="day">
-                    <img src="https://cdn3.iconfinder.com/data/icons/bebreezee-weather-symbols/690/icon-weather-sunrainheavy-512.png" class="icon">
-                    <h4 class="forecasdtT">30°c</h4>
-                    <h4 class="dayName heading">Monday</h4>
-                </div>
-            </div>
-        </div>
-    </div>
     
+    <div class="container">
+        <nav>
+            <div class="navItem">Home</div>
+            <div class="navItem">Work</div>
+            <div class="navItem">About</div>
+        </nav>
+
+        <section class="hero">
+            <div class="hero_avatar"><img class="hero_avatar" src="https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/4_avatar-512.png" alt="A"></div>
+            <h3 class="hero_hi">Hi <%= name %></h3>
+            <h3 class="hero_light">Have a nice day. <img class="hero_sideImg" src="https://www.onlygfx.com/wp-content/uploads/2018/09/4-clipart-sun-1.png" alt=":-)"></h3>
+            <div class="hero_task">
+                <h3 class="hero_light">You have <%= taskNo %> tasks.</h3>
+                <img class="hero_sideImg" src="https://image.flaticon.com/icons/png/512/207/207515.png" alt="N">
+            </div>
+        </section>
+
+        <section class="todo">
+            <h2 id="date"> <%= date %> </h2>
+            <div class="todo_tasks">
+
+                <% for (let i = 0; i < todoTask.length; i++) { %>
+
+                    <input type="checkbox">
+                    <p> <%= todoTask[i] %> </p>
+
+                <% } %>
+
+            </div>
+                
+                
+                <!-- Input Form -->
+                <form action="/" method="post">
+                <input type="text" name="todoItem" placeholder="New Item" required>
+                <button type="submit" name="list" value=<%= todoType %>>+</button>
+                </form>
+        </section>
+    </div>
+
 </body>
 </html>

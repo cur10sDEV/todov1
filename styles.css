@@ -1,95 +1,134 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600&display=swap');
 
 * {
-    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Rajdhani', sans-serif;
+    overflow: hidden;
 }
 
 body {
-    background-image: url(bgi.jpg);
-    overflow: hidden;
-    color: #fff;
-    text-align: center;
+    background-color: #08e1ae;
+    background-image: linear-gradient(315deg, #08e1ae 0%, #98de5b 74%);
 }
 
 .container {
+    padding: 2rem;
     height: 100vh;
+    width: 85vw;
 }
 
 
-.top {
-    background-color: rgba(255, 255, 255, 0.25);
-    border-radius: 2rem;
-    margin: 1rem;
-    height: 37vh;
+/* Nav Section */
+nav {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    text-align: center;
+    justify-content: space-around;
 }
 
-#cityName {
-    font-size: 1.2rem;
+.navItem {
+    font-size: 1.55rem;
+    /* background-color: khaki; */
+    background-color: rgba(255,255,255,.3);
+    padding: .5rem 1.8rem;
+    border-bottom-left-radius: 1.3rem;
+    border-top-right-radius: 1.3rem;
+    border-bottom-right-radius: 1.3rem;
+    border-top-left-radius: 1.3rem;
     font-weight: 500;
-    padding-bottom: 1rem;
-}
-
-#currentW {
-    font-size: 5rem;
-}
-
-#wDesc, #lowHigh {
-    padding: .3rem;
-    font-size: 1.3rem;
-    font-weight: bolder;
 }
 
 
-
-.bottom {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.details {
-    display: flex;
-    justify-content: space-around;
-    padding: 1.5rem;
-    background-color: rgba(255, 255, 255, 0.25);
+/* Hero Section */
+.hero {
+    margin: 2rem 0;
+    /* background-color: khaki; */
+    background-color: rgba(255,255,255,.3);
+    padding: 1rem 1.5rem;
     border-radius: 2rem;
-    margin: 1rem;
 }
 
-.heading {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    padding-bottom: .5rem;
+.hero_avatar {
+    width: 5rem;
 }
 
-.flexrow {
+.hero_hi {
+    font-size: 1.5rem;
+    margin: .2rem 0 .4rem .2rem;
+}
+
+.hero_light {
+    font-family: 1.35rem;
+    font-weight: 600;
+    color: rgb(94, 94, 94);
+    margin: 0 0 .2rem .2rem;
+}
+
+.hero_task {
     display: flex;
-    flex-direction: column;
 }
 
-.flexitems {
-    padding: 1rem;
+.hero_sideImg {
+    width: 1rem;
+    padding-left: .3rem;
 }
 
-.forecast {
+
+/* Task Section */
+.todo {
+    /* background-color: khaki; */
+    background-color: rgba(255,255,255,.3);
+    border-radius: 2rem;
+    padding: 1rem 1.5rem;
+    margin: 2rem 0;
+}
+
+#date {
+    padding: 1rem .2rem;
+}
+
+.todo_tasks {
+    /* background-color: #fff7b1; */
+    background-color: rgba(255,255,255,.3);
+    border-radius: 2rem;
+    padding: 1rem 1.5rem;
+    text-align: center;
+}
+
+p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: black;
+    border-bottom: 3px white solid;
+    margin-bottom: 1rem;
+}
+
+
+/* Input Form Section */
+form {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    margin: 2rem 0;
 }
 
-.todayTimeW {
-    display: flex;
-    justify-content: space-around;
-    padding: 1rem;
+
+input {
+    font-size: 1.5rem;
+    text-align: center;
+    /* background-color: khaki; */
+    background-color: rgba(255,255,255,.3);
+    border-bottom: 3px white solid;
+    color: black;
 }
 
-img {
-    width: 50px;
+button {
+    /* background-color: #fff7b1; */
+    background-color: rgba(255,255,255,.3);
+    font-size: 2rem;
+    border-radius: 50%;
+    font-weight: 600;
+    margin-left: .5rem;
+    padding: .1rem .7rem;
 }
